@@ -1,0 +1,11 @@
+<h> Enter ShortFilm Details </h>
+<%=form_tag shortfilms_create_path do %>
+Name: <%= text_field_tag 'name' %><br/>
+Duration: <%= number_field_tag 'duration' %><br/>
+Language: <%= text_field_tag 'lang' %><br/>
+Banner: <%= text_field_tag 'banner' %><br/>
+Website: <%= text_field_tag 'website' %><br/>
+<%= submit_tag %>
+<% end %>
+<br/><br/>
+<%=link_to "ShortFilm List", shortfilms_list_path %>
